@@ -10,7 +10,7 @@ const hourHand = document.getElementsByClassName("hour-hand");
 function setTime() {
   const currentDate = new Date();
   const seconds = currentDate.getSeconds();
-  const secDegrees = (seconds / 60) * 360;
+  const secDegrees = (seconds / 60) * 360 + 90;
   console.log(seconds);
 }
 
