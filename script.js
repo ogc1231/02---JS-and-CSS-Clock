@@ -16,7 +16,7 @@ function setTime() {
   secHand.style.transform = `rotate(${secDegrees}deg)`;
   minHand.style.transform = `rotate(${minDegrees}deg)`;
   hourHand.style.transform = `rotate(${hourDegrees}deg)`;
-  if (seconds == 0) {
+  if (seconds === 0) {
     secHand.style.transitionDuration = "0s";
     minHand.style.transitionDuration = "0s";
     hourHand.style.transitionDuration = "0s";
