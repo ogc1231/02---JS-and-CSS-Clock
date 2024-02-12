@@ -1,6 +1,6 @@
-const secHand = document.getElementsByClassName("second-hand");
-const minHand = document.getElementsByClassName("min-hand");
-const hourHand = document.getElementsByClassName("hour-hand");
+const secHand = document.querySelector(".second-hand");
+const minHand = document.querySelector(".min-hand");
+const hourHand = document.querySelector(".hour-hand");
 
 // const currentDate = new Date();
 // const seconds = currentDate.getSeconds();
@@ -11,6 +11,7 @@ function setTime() {
   const currentDate = new Date();
   const seconds = currentDate.getSeconds();
   const secDegrees = (seconds / 60) * 360 + 90;
+  secHand.style.transform = `rotate(${secDegrees}deg)`;
   console.log(seconds);
 }
 
