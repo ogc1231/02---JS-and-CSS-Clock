@@ -59,10 +59,6 @@ body {
 }
 
 .ticks {
-  .tick {
-    position: absolute;
-    background: black;
-  }
   .three {
     top: 0%;
     right: 0;
